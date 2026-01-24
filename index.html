@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack Pro - Modern Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar glass">
+            <div class="brand">
+                <i data-lucide="layout-dashboard" class="icon-brand"></i>
+                <h2>FinTrack Pro</h2>
+            </div>
+
+            <div class="input-section">
+                <h3>Tambah Transaksi</h3>
+                <form id="transaction-form">
+                    <div class="form-group">
+                        <label>Nama Transaksi</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="tag" class="input-icon"></i>
+                            <input type="text" id="desc" placeholder="Contoh: Gaji Bulanan" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jumlah (IDR)</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="banknote" class="input-icon"></i>
+                            <input type="number" id="amount" placeholder="Contoh: 5000000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Tipe</label>
+                        <div class="input-wrapper">
+                            <select id="type" title="Pilih tipe transaksi">
+                                <option value="income">Pemasukan (+)</option>
+                                <option value="expense">Pengeluaran (-)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <i data-lucide="plus-circle"></i> Simpan Transaksi
+                    </button>
+                </form>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div>
+                    <h1>Ringkasan Keuangan</h1>
+                    <p id="current-date" class="text-muted">Memuat tanggal...</p>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="card glass">
+                    <div class="card-icon blue">
+                        <i data-lucide="wallet"></i>
+                    </div>
+                    <div class="card-info">
+                        <span>Total Saldo</span>
+                        <h2 id="balance">Rp 0</h2>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon green">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <div class="card-info">
+                        <span>Pemasukan</span>
+                        <h2 id="inc-amt" class="text-green">Rp 0</h2>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon red">
+                        <i data-lucide="trending-down"></i>
+                    </div>
+                    <div class="card-info">
+                        <span>Pengeluaran</span>
+                        <h2 id="exp-amt" class="text-red">Rp 0</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div class="dashboard-grid">
+                <div class="chart-container glass">
+                    <div class="card-header">
+                        <h3>Analisis Pengeluaran</h3>
+                    </div>
+                    <div class="canvas-wrapper">
+                        <canvas id="financeChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="history-container glass">
+                    <div class="card-header">
+                        <h3>Riwayat Transaksi</h3>
+                        <button class="btn-sm" onclick="clearData()">Reset</button>
+                    </div>
+                    <ul id="list" class="transaction-list">
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
