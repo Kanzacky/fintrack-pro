@@ -22,7 +22,7 @@
 
 1.  Clone repository ini:
     ```bash
-    
+        git clone https://github.com/Kanzacky/fintrack-pro.git
     ```
 2.  Masuk ke folder project:
     ```bash
