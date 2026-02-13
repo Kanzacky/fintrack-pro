@@ -30,7 +30,7 @@
     ```
 3.  Buka file `index.html` di browser favorit Anda.
 
-## 📝 Catatan Pengembangan
+## Catatan Pengembangan
 Project ini dibuat sebagai demonstrasi kemampuan pengembangan Front-End, khususnya dalam memanipulasi DOM dan mengintegrasikan library eksternal tanpa bantuan framework seperti React atau Vue.
 
 ---
