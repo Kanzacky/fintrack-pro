@@ -1,36 +1,34 @@
-# FinTrack Pro - Dashboard Keuangan Modern
+# FinTrack Pro - Modern Financial Dashboard
 
-**FinTrack Pro** adalah aplikasi pengelolaan keuangan pribadi berbasis web yang dirancang dengan antarmuka modern (Glassmorphism). Aplikasi ini memungkinkan pengguna untuk mencatat transaksi harian dan melihat ringkasan keuangan melalui grafik yang interaktif.
+**FinTrack Pro** is a web-based personal finance management application designed with a modern Glassmorphism interface. This application allows users to record daily transactions and view financial summaries through interactive charts.
 
-## Fitur Utama
+## Key Features
 
-* **Desain Modern:** Menggunakan gaya **Glassmorphism** yang bersih, transparan, dan responsif untuk desktop maupun mobile.
-* **Visualisasi Data:** Integrasi dengan **Chart.js** untuk menampilkan perbandingan pemasukan dan pengeluaran secara visual.
-* **Penyimpanan Lokal (Local Storage):** Data transaksi tersimpan otomatis di browser, sehingga data tidak hilang saat halaman di-refresh.
-* **Kalkulasi Otomatis:** Perhitungan total saldo, pemasukan, dan pengeluaran dilakukan secara real-time saat transaksi ditambah atau dihapus.
-* **Ringan & Cepat:** Dibangun hanya menggunakan Vanilla JavaScript tanpa framework berat.
+* **Modern Design:** Utilizes a clean, transparent, and responsive **Glassmorphism** style for both desktop and mobile.
+* **Data Visualization:** Integrated with **Chart.js** to visually display income vs. expense comparisons.
+* **Local Storage:** Transaction data is automatically saved in the browser, ensuring data persists even after a page refresh.
+* **Automatic Calculation:** Real-time calculation of total balance, income, and expenses as transactions are added or deleted.
+* **Lightweight & Fast:** Built using Vanilla JavaScript without heavy frameworks.
 
-## Teknologi yang Digunakan
+## Technologies Used
 
-* **HTML5** - Struktur semantik halaman.
-* **CSS3** - Menggunakan CSS Grid, Flexbox, Variable, dan efek Glassmorphism.
-* **JavaScript (ES6+)** - Manipulasi DOM, logika perhitungan, dan State Management sederhana.
-* **Chart.js** - Library grafik untuk visualisasi data keuangan.
-* **Lucide Icons** - Ikon SVG modern yang ringan dan tajam.
+* **HTML5** - Semantic page structure.
+* **CSS3** - Utilizing CSS Grid, Flexbox, Variables, and Glassmorphism effects.
+* **JavaScript (ES6+)** - DOM manipulation, calculation logic, and simple State Management.
+* **Chart.js** - Charting library for financial data visualization.
+* **Lucide Icons** - Modern, lightweight, and sharp SVG icons.
 
-## Cara Menjalankan Project
+## How to Run the Project
 
-1.  Clone repository ini:
+1.  Clone this repository:
     ```bash
-        git clone https://github.com/Kanzacky/fintrack-pro.git
+    git clone [https://github.com/Kanzacky/fintrack-pro.git](https://github.com/Kanzacky/fintrack-pro.git)
     ```
-2.  Masuk ke folder project:
+2.  Navigate to the project folder:
     ```bash
     cd fintrack-pro
     ```
-3.  Buka file `index.html` di browser favorit Anda.
+3.  Open the `index.html` file in your favorite browser.
 
-## Catatan Pengembangan
-Project ini dibuat sebagai demonstrasi kemampuan pengembangan Front-End, khususnya dalam memanipulasi DOM dan mengintegrasikan library eksternal tanpa bantuan framework seperti React atau Vue.
-
----
+## Development Notes
+This project was created as a demonstration of Front-End development skills, specifically in DOM manipulation and integrating external libraries without the aid of frameworks like React or Vue.
